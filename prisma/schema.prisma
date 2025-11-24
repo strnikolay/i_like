@@ -1,0 +1,108 @@
+datasource db {
+  provider  = "postgresql"
+  //url       = env("POSTGRES_URL") // uses connection pooling
+  //directUrl = env("PRISMA_DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["relationJoins"]
+  output   = "./lib/generated/prisma"
+}
+
+model User {
+  id Int @id @default(autoincrement())
+
+  email   String  @unique
+  pass    String
+  company String
+  inn     Int
+
+  contact Contact[]
+  adress Adress[]
+  orderHistory Order[]
+  fav String[]
+ 
+  @@map("user")
+}
+
+model Contact {
+    id Int @id @default(autoincrement())
+    user User @relation(fields: [userId], references: [id])
+    userId Int
+
+    name String
+    phone String
+    defaultContact Boolean 
+    @@map("contact")
+}
+
+model Adress {
+    id Int @id @default(autoincrement())
+    user User @relation(fields: [userId], references: [id])
+    userId Int
+
+    adress String
+    defaultAdress Boolean 
+    @@map("adress")
+}
+
+model Order {
+    id Int @id @default(autoincrement())
+    user User @relation(fields: [userId], references: [id])
+    userId Int
+
+    status String
+    contact Int
+    deliveryType String
+    adress Int
+    transport String
+    productParams CartItem[]
+  @@map("order")
+}
+
+model CartItem{
+  id Int @id @default(autoincrement())
+  order Order @relation(fields: [orderId], references: [id])
+  orderId Int
+
+  productId String
+  itemParams CartItemParam[]
+
+  @@map("cartItem")
+}
+
+model CartItemParam {
+  id Int @id @default(autoincrement())
+  cartItem CartItem @relation(fields: [itemId], references: [id])
+  itemId Int
+
+  size Int
+  color Int
+  count Int
+
+  @@map("itemParams")
+}
+
+ model Product {
+    id Int @id @unique
+    cat Int
+    brand Int
+    desc String
+    img String[]
+    sticker String
+    price Int
+    count Int
+    sizes Sizes[]
+
+    @@map("product")
+}
+
+model Sizes {
+  id Int @id @default(autoincrement())
+  product Product @relation(fields: [productId], references: [id])
+  productId Int
+  color Int[]
+
+  @@map("sizes")
+}

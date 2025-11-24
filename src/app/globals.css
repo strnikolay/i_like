@@ -1,0 +1,130 @@
+:root {
+  --background: #E2E2E2;
+  --foreground: #171717;
+  --magenta: #d50b7a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@media screen and (max-width: 1600px) {
+  html	{
+      font-size: calc(100vw / 1500 * 10);
+  }
+}
+
+@media screen and (max-width: 1240px) {
+	html{
+		font-size: calc(100vw / 1240 * 10);
+	}
+} 
+
+@media screen and (max-width: 1024px) {
+	html{
+	font-size: calc(100vw / 1024 * 10);
+	}
+}
+  
+@media screen and (max-width: 767px) {
+	html{
+	font-size: calc(100vw / 767 * 10);
+	}
+}
+  
+@media screen and (max-width: 500px) {
+	html{
+	font-size: calc(100vw / 500 * 10);
+	}
+}
+
+body {  
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Cuprum;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /*align-content: space-between;*/
+  justify-content: space-between;
+  padding: 0 .5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  scrollbar-width: thin;
+  scrollbar-color: #4ab7ae #4ab7ae00;
+}
+
+
+/* для Chrome/Edge/Safari */
+body::-webkit-scrollbar {
+  height: 2rem;
+  width: .5rem;
+}
+body::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4ab7ae;
+  border-radius: .5rem;
+  border: 0 solid #00000000;
+}
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.container {
+  width: 100%;
+    max-width: 1240px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+} 
+
+.add-fav {
+    background: url('/product_Card/fav.svg') center/contain no-repeat;
+}
+
+.add-fav:disabled {
+    background: url('/product_Card/dissable-fav.svg') center/contain no-repeat;
+}
+
+.remove-fav {
+    background: url('/product_Card/unfav.svg') center/contain no-repeat;
+}
+
+.add-cart {
+  background: url('/product_Card/add-to-cart.svg') center/contain no-repeat;
+}
+
+.add-cart:disabled {
+  background: url('/product_Card/dissable-add-to-cart.svg') center/contain no-repeat;
+}
+
+.remove-cart {
+    background : url('/product_Card/remove-from-cart.svg') center/contain no-repeat;
+}

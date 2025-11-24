@@ -1,0 +1,314 @@
+.profile-wrap {
+    display: flex;
+    margin-top: 1rem;
+
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        height: 100%;
+        width: 100%;
+
+        .tab_menu {
+            margin: 0.5rem 0;
+            width: 20rem;
+            /*padding: 5px;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+
+            .tab_container[data-active="active"]{
+                margin-left: -.13rem;
+                width: 20.43rem;
+                button{
+                    border-left: 0px;
+                    border-radius: 0 1rem 1rem 0;
+                }
+                
+            }
+        
+            .tab_container{
+                width: 100%;
+                margin: 1rem .5rem;
+        
+                button{
+                    height: 4rem;
+                    width: 100%;
+                    border: 1px solid #000;
+                    border-radius: 1rem;
+                    background-color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                button:focus{
+                    /*box-shadow: 0px -3px 5px rgba(10, 60, 153, 0.581);*/
+                   
+                }
+            }
+        }}
+    
+    .profile-content{
+        border: 1px solid #000;
+        background: #fff;
+        border-radius: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .account-data-wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2rem;
+
+      .company{
+        font-size: 1.6rem;
+      }
+
+      .edit-contact-wrapper {
+        border: 1px solid var(--magenta);
+        border-radius: .5rem;
+        padding: .5rem;
+        margin: 2rem 0;
+
+        .contact-item{
+          display: flex;
+          align-items: center;
+          border: 1px solid var(--magenta);
+          border-radius: .5rem;
+          padding: .3rem;
+          margin: .3rem 0;
+
+          label {
+            display: flex;
+          }
+
+          .name-input{
+            border: 0;
+            outline: none;
+            width: 10rem;
+            text-align: center;
+            margin-right: .5rem;
+          }
+
+          .name-input:read-only{
+            cursor: default ;
+          }
+
+          .phone-input{
+            border: 0;
+            outline: none;
+            width: 10rem;
+            text-align: center;
+            margin-right: .5rem;
+          }
+
+          .phone-input:read-only{
+            cursor: default ;
+          }
+
+          .edit{
+            padding-left: .3rem;
+            background-image: url('./edit.svg');
+            background-size:cover;
+            width: 2rem;
+            height: 2rem;
+          }
+
+          .confirm{
+              width: 25px;
+              height: 25px;
+          }
+
+          .confirm::after{
+              display: flex;
+              content: "\2713";
+              width: 2rem;
+              height: 2rem;
+              line-height: 2rem;
+              font-size: 1.2rem;
+              font-weight: 800;
+              color:#fff;
+              border-radius: .5rem;
+              background-color: var(--magenta);
+              justify-content: center;
+          }
+
+          .default-label {
+            align-items: center;
+
+            .default-input {
+              display: none;
+            }
+          }
+
+          .default-label::before{
+              display: flex;
+              content: "";
+              width: 2rem;
+              height: 2rem;
+              line-height: 2rem;
+              font-size: 1.2rem;
+              font-weight: 800;
+              color:#fff;
+              border-radius: .5rem;
+              background-color: var(--magenta);
+              justify-content: center;
+              margin: 0 1rem;
+          }
+
+          .default-label.active {
+            &::before{
+              content: "\2713";
+            }
+              
+          }
+
+        }
+
+        .add-contact-btn{
+          display: flex;
+          width: 100%;
+          height: 2.7rem;
+          margin: .3rem 0;
+          border: 1px solid var(--magenta);
+          border-radius: .5rem;
+        }
+      }
+
+      .edit-adress-wrapper {
+        border: 1px solid var(--magenta);
+        border-radius: .5rem;
+        padding: .5rem;
+
+        .adress-item{
+          display: flex;
+          align-items: center;
+          border: 1px solid var(--magenta);
+          border-radius: .5rem;
+          padding: .3rem;
+          margin: .3rem 0;
+
+          label {
+            display: flex;
+          }
+
+          .adress-input{
+            border: 0;
+            outline: none;
+            width: 20rem;
+            text-align: center;
+            margin-right: .5rem;
+          }
+
+          .adress-input:read-only{
+            cursor: default ;
+          }
+
+          .default-label {
+            align-items: center;
+
+            .default-input {
+              display: none;
+            }
+          }
+
+          .default-label::before{
+              display: flex;
+              content: "";
+              width: 2rem;
+              height: 2rem;
+              line-height: 2rem;
+              font-size: 1.2rem;
+              font-weight: 800;
+              color:#fff;
+              border-radius: .5rem;
+              background-color: var(--magenta);
+              justify-content: center;
+              margin: 0 1rem;
+          }
+
+          .default-label.active {
+            &::before{
+              content: "\2713";
+            }
+              
+          }
+        }
+
+
+        .edit{
+            padding-left: .3rem;
+            background-image: url('./edit.svg');
+            background-size:cover;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .name-input:read-only{
+            cursor: default ;
+        }
+
+        .confirm{
+            /*background-image: url('../../../img/edit.svg');
+            background-size:cover;*/
+            width: 25px;
+            height: 25px;
+        }
+
+        .confirm::after{
+            display: flex;
+            content: "\2713";
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color:#fff;
+            border-radius: .5rem;
+            /*border: 2px solid #333;*/
+            background-color: var(--magenta);
+            justify-content: center;
+        }
+        
+        .add-adress-btn{
+          display: flex;
+          width: 100%;
+          height: 2.7rem;
+          margin: .3rem 0;
+          border: 1px solid var(--magenta);
+          border-radius: .5rem;
+        }  
+      }
+    }
+
+
+
+}
+
+/* -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        animation-duration: 0.5s;*/
+
+
+
+@keyframes bounceIn {
+  from {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

@@ -1,0 +1,90 @@
+.deliv-wrap {
+    flex-direction: column;
+}
+
+.deliv-wrap h2 {
+    margin: 20px 0 0 0;
+}
+
+.img-wrap {
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.del-icon {
+    width: 105px;
+    height: 70px;
+    position: absolute;
+    background-image: url('../../../public/delivery/border.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+    .line {
+       position: absolute;
+       border: 3px #3c948d;
+    }
+}
+
+.pochta-wrap {
+    top: 30px;
+    left: 0;
+    .line {
+        top: 40px;
+        left: 150px;
+        width: 70px;
+        height: 170px;   
+        border-style: dashed dashed hidden hidden;
+        transform: skew(30deg, 0);
+    }
+}
+
+.sdek-wrap {
+    top:30px;
+    .line {
+        top: 65px;
+        left: 0px;
+        width: 60px;
+        height: 140px;
+        border-style: hidden dashed hidden hidden;
+    }
+}
+
+.del-wrap {
+    top: 30px;
+    right: -80px;
+    .line {    
+        top: 40px;
+        left: -120px;
+        width: 70px;
+        height: 170px;
+        border-style: dashed hidden hidden dashed;
+        transform: skew(-30deg, 0);
+    }
+}
+
+.pek-wrap {
+    top: 200px;
+    left: -180px;
+    .line {
+        top: 40px;
+        left: 100px;
+        width: 100px;
+        height: 10px;
+        border-style: dashed hidden hidden hidden;
+    }
+}
+
+.ems-wrap {
+    top: 200px;
+    right: -180px;
+    .line {
+        top: 40px;
+        left: -200px;
+        width: 200px;
+        height: 10px;
+        border-style: dashed hidden hidden hidden;
+    }
+}

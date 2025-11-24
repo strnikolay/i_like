@@ -1,0 +1,13 @@
+.fav-wrap {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.fav-product-wrap {
+    margin: 4rem 0;
+    display: flex;
+    /*justify-content: space-between;*/
+    padding: 0 5px ;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,50 @@
+.partner-wrap {
+
+    justify-content: center;
+    flex-direction: column;
+}
+
+.partner-title {
+    position: absolute;
+    left: 60px;
+    top: 50%;
+    font-size: 40px;
+    color: #fff;
+    z-index: 3;
+    text-shadow: 3px 3px 10px #000;
+}
+
+svg {
+    z-index: 1;
+}
+
+.partner-item{
+    position: relative;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-wrap .text {
+   height: 120px;
+   width: 882px;
+   color: #fff;
+   padding: 10px 20px;
+   vertical-align: middle;
+   margin-left: -13px ;
+   box-shadow: 3px 3px 8px #000000a5;
+}
+
+.blue {
+    background-color: #47ACA4; 
+}
+
+.red {
+    background-color: #E5017F; 
+}
+
+.up {
+    margin-top: -55px;
+}

@@ -1,0 +1,282 @@
+.login-page-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  font-family: Cuprum;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  -webkit-transition: opacity .5s ease-in-out;
+       -moz-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+         -o-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+  */
+}
+
+.popup-background {
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000cb;
+}
+
+.login-form-wrapper {
+    width: 50rem;
+    opacity: 1;
+    position: fixed;
+    z-index: 102;
+    background: #ffffff;
+    border-radius: 1rem;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form-close {    
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      z-index: 9;
+      border:0;
+      background-image: url("../../../../public/login/x.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
+.login-switch {
+      text-align: center;
+      font-size: 1.6rem; 
+}
+
+.login-switch i {
+        display: inline-block;
+        height: 2px;
+        padding-top: 12px;
+        position: relative;
+        top: 8px;
+        width: 50px;
+        border-top: 1px solid #adadad;
+        margin: 0px 12px;
+}
+
+.login-select-type {
+  margin: 0 1rem;
+}
+
+.login-select-type input {
+  display: none;
+}
+
+.login-select-type:has(input[type='radio']:checked) {
+  border-bottom: 3px solid #000;
+}
+
+.login-title {
+      margin: 20px 0;
+      display: flex;
+      font-size: 1.4rem;
+}
+
+.login-title-icon {
+  margin-right: 15px;
+  position: relative;
+  width: 7.5rem;
+  height: 5rem;
+}
+ 
+
+  .bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  }
+
+
+
+fieldset {
+  position: relative;
+    height: 4rem;
+    display: flex;
+    margin: 1.5rem;
+    margin-bottom: .1rem;
+    border: 1px solid #4ab7ae;
+    border-radius: 0 10px 10px 0;
+}
+
+.field-error {
+  border: 1px solid #d50b7a;
+}
+
+fieldset legend {
+  position: absolute;
+  font-size: 1.4rem;
+  margin: -1rem 4rem;
+  padding: 0 .5rem;
+  background-color: #fff;
+} 
+
+.form-input {
+    width: 90%;
+    height: 3.5rem;
+    outline:none;
+    border: none;
+    padding-left: 1rem;
+}
+
+.user, .pass {
+    height: 4rem;
+    width: 4rem;
+    margin: -.1rem 0 0 -1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #4ab7ae;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.input-error {
+  background-color: #d50b7a;
+}
+
+.user {
+  background-image: url("../../../../public/login/user.svg");
+}
+
+.pass {
+    background-image: url("../../../../public/login/password.svg");
+}
+
+.error-msg {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  color:#d50b7a;
+}
+
+.button-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;  
+}
+
+.btn-submit {
+    border: 0;
+    color: #fff;
+    width: 20rem;
+    height: 4rem;
+    background-color: 4ab7ae;
+    background-color: #4ab7ae; 
+    border-radius: 1rem;
+    font-size: 1.4rem;
+}
+
+.btn-submit:disabled {
+  background-color: 4ab7ae;
+  background-color: #838383; 
+}
+
+.bounceOut {
+  -webkit-animation-name: bounceOut;
+  animation-name: bounceOut;
+}
+
+.done-text {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 2rem 2rem;
+}
+
+.done-btn {
+    border: 0;
+    color: #fff;
+    width: 20rem;
+    height: 4rem;
+    background-color: 4ab7ae;
+    background-color: #4ab7ae; 
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    margin: 2rem auto;
+}
+
+@-webkit-keyframes bounceIn {
+  from {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes bounceIn {
+  from {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@-webkit-keyframes bounceOut {
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+@keyframes bounceOut {
+  20% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+}
+
+

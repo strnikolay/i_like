@@ -1,0 +1,27 @@
+.review-wrap {
+    position: relative;
+    width: 124rem;
+    height: 67rem;
+}
+
+.review-wrap .background {
+    top:0;
+    left:0;
+    width: 103%;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .review-wrap {
+        width: 103rem;
+        height: 67rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .review-wrap {
+        width: 76rem;
+        height: 57rem;
+    }
+}

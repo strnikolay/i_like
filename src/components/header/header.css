@@ -1,0 +1,329 @@
+.header {
+   /* width: 98%;*/
+}
+
+
+.logo {
+    position: relative;
+    width: 24rem;
+    height: 7.5rem;
+    background: no-repeat  url('../../../public/header/logo.png');
+    background-size: contain;
+}
+
+
+
+.header-btn-wrap {
+    width: 29rem;
+    display: flex;
+    justify-content: space-between;
+}
+.header-btn-wrap .contact-wrapper {
+        display: flex;
+        align-items: center;
+}
+.header-btn-wrap .phone-icon {
+            position: relative;
+            width: 4.2rem;
+            height: 4.2rem;
+            border-radius: .5rem;
+            background-color: #D50B7A;
+            margin-right: .5rem;
+            
+}
+.header-btn-wrap .phone-icon img {
+    padding: .7rem;
+}
+
+.header-btn-wrap .contact-content{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+}
+
+.header-btn-wrap .contact-content .phone-number {
+                color: #4AB7AE;
+                display: flex;
+                align-items: center;
+                font-size: 1.8rem;
+}
+
+.header-btn-wrap .contact-content .grey-arrow-down {
+                    margin-left: 0.5rem;
+                    width: 1.2rem;
+                    height: 0.8rem;
+                    background: no-repeat url(../../../public/header/grey-arrow-down.svg) ;
+                    background-size: contain;
+}
+            
+
+.openrecall {
+    margin-top: 0.4rem;
+    font-size: 1.4rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background-color: #fff;
+    width: 27rem;
+    color: #777;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 25px;
+    box-shadow: 2px 2px 10px #424242;
+    z-index: 2;
+    font-size: 1.6rem;
+}    
+
+.dropdown-menu div {
+        display: flex;  
+    }
+
+.dropdown-menu .img-wrap {
+        position: relative;
+        min-width: 1.5rem;
+        height: 1.5rem;
+    }
+
+.dropdown-menu img {
+        width: 1.5rem;
+        margin-right: 0.3rem;
+}
+
+
+.cart-btn-wrap {
+    position: relative;
+    margin-right: 1rem;
+    width: 5.6rem;
+    height: 5rem;
+}
+.cart-btn-wrap .header-cart-sum {
+        position: absolute;
+        left: .6rem;
+        top:12%;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        background-color: #D50B7A;
+        font-size: 1.4rem;
+        border-radius: 1rem 0 1rem 0;
+        text-wrap-mode:nowrap;
+}
+
+
+
+.header .category {
+    width: 23rem;
+    height: 4.2rem;
+    background: -webkit-linear-gradient(top, #4AB7AE 0%, #3C948D 100%);
+    border-radius: 0.5rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.header .category .category-text {
+        font-size: 1.6rem;
+        font-weight: 700;
+        font-family: Cuprum;
+    }
+
+.header .category .burger {
+        width: 2rem;
+        height: 2rem;
+        background: url(../../../public/burger.svg) no-repeat;
+}
+
+
+
+
+nav {
+    display: flex;
+    /*width: 40rem;*/
+    flex-grow: 1;
+    margin: 0 2rem;
+}
+nav .nav-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+}
+nav .nav-list li {
+            flex-grow: 1;
+            font-family: Cuprum;
+            font-size: 1.6rem;
+            position: relative;
+            padding: 1rem 0.5rem;
+            border-radius: .5rem;
+            align-self: center;
+}
+
+nav .nav-list li:hover {
+    color: #fff;
+    background-color: #3C948D;
+}                
+ 
+nav .nav-list li:hover .dropdown-list {
+                    list-style: none;
+                    display: flex;
+                    border-radius: 1rem;
+}                    
+.dropdown-list li {
+                        width: 100%;
+                        border-radius: 0;                       
+                        align-content: center;
+}
+.hasdropdown .dropdown-list li a{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            
+}
+
+    
+
+    .hasdropdown ul {
+        background-color: #3C948D;
+        width: 24.5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        flex-direction: column;
+        color: #fff;
+        z-index: 2;
+        border-radius: 0 5px 5px 5px;
+        box-shadow: 7px 7px 10px #000000a0;
+    }
+.hasdropdown ul li {
+            height: 4rem;
+            padding: 5px;
+            border-bottom: 1px solid #fff;
+}
+.hasdropdown ul li:last-child {
+                border-bottom: 0;
+            }
+
+
+
+
+
+
+
+.header .login-wrap {
+    width: 29rem;
+    height: 4.2rem;
+    display: flex;  
+}
+
+.login-wrap .nav-btn {
+        display: flex;
+}
+.login-wrap .fav-link {
+        padding: .5rem;
+        border-radius: .5rem;
+        width: 4.2rem;
+        height: 4.2rem;
+        background:#D50B7A url("./heart.svg") no-repeat center;
+        background-size: 80%;
+        margin-right: 1rem;
+}
+
+
+.logout {
+
+    position: relative;
+    min-width: 4.2rem;
+    height: 4.2rem; 
+    border-radius: 0.5rem;
+    background: -webkit-linear-gradient(top, #4AB7AE 0%, #3C948D 100%);
+    
+}
+
+.logout img {
+    padding: .7rem;
+}
+
+.login, .profile {
+    width: 100%;
+    margin-left: 1rem;
+    height: 4.2rem;
+    background: -webkit-linear-gradient(top, #4AB7AE 0%, #3C948D 100%);
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.2rem;
+
+}
+
+.burger-menu {
+    display: none;
+    position: relative;
+    min-width: 4.2rem;
+    height: 4.2rem;
+    background:-webkit-linear-gradient(top, #4AB7AE 0%, #3C948D 100%); ;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+   
+}
+
+.burger-menu img {
+        padding: .8rem .6rem .5rem .9rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        width: 21.17rem;
+        height: 6.25rem;
+    }
+
+	nav {
+        ul {
+            li {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .category, .login-wrap {
+    width: 21.17rem;
+    height: 4.2rem;
+    }
+
+    .phone-icon {
+        width: 4.17rem;
+        height: 4.17rem;  
+    }
+
+    .phone-number {
+        font-size: 2.0rem;
+    }
+
+    .openrecall {
+        font-size: 1.4rem;
+    }
+}
+  
+@media screen and (max-width: 767px) {
+	nav ul {
+        display: none ;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    nav {
+        justify-content: end;
+    }
+}
+  
+@media screen and (max-width: 500px) {
+	
+}

@@ -1,0 +1,212 @@
+.certificates-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        .tab_menu {
+            margin: 0.5rem 0;
+            width: 100%;
+            /*padding: 5px;*/
+            display: flex;
+            justify-content: space-between; 
+        
+            .tab_container{
+                width: 100%;
+                margin: 1rem .5rem;
+        
+                button{
+                    height: 4rem;
+                    width: 100%;
+                    border: 1px solid #000;
+                    border-radius: 1rem;
+                    background-color: #fff;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+
+                button:focus{
+                    box-shadow: 0px -3px 5px rgba(10, 60, 153, 0.581);
+                   
+                }
+            }
+        }}
+    
+    .content{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.certificates-wrap .content {
+    display: flex;
+}
+
+.cert-img {
+    width: 20rem;
+    height: 28.7rem;
+    margin: 1rem;
+
+    div {
+        background-size: contain; 
+        height: 100%;
+    }
+
+    .ilike-one {
+        background: no-repeat url("../../../public/certificates/ilike_1_s.jpg"); 
+    }
+
+    .ilike-two{
+        background: no-repeat url("../../../public/certificates/ilike_2_s.jpg");
+    }
+
+    .biglif-one {
+        background: no-repeat url("../../../public/certificates/biglif_1_s.jpg");
+    }
+
+    .biglif-two {
+        background: no-repeat url("../../../public/certificates/biglif_2_s.jpg");
+    }
+
+    .biglif-three {
+        background: no-repeat url("../../../public/certificates/biglif_3_s.jpg");
+    }
+
+    .allegro-one{
+        background: no-repeat url("../../../public/certificates/allegro_1_s.jpg");
+    }
+
+    .glora-one{
+        background: no-repeat url("../../../public/certificates/glora_1_s.jpg");
+    }
+
+    .orh-one{
+        background: no-repeat url("../../../public/certificates/orh_1_s.jpg");
+    }
+    .orh-two{
+        background: no-repeat url("../../../public/certificates/orh_2_s.jpg");
+    }
+    .orh-three{
+        background: no-repeat url("../../../public/certificates/orh_3_s.jpg");
+    }
+    .orh-four{
+        background: no-repeat url("../../../public/certificates/orh_4_s.jpg");
+    }
+    .nv-one{
+        background: no-repeat url("../../../public/certificates/nv_1_s.jpg");
+    }
+    .nv-two{
+        background: no-repeat url("../../../public/certificates/nv_2_s.jpg");
+    }
+
+}
+
+
+
+.big {
+    position: absolute;
+    width: 100%;
+    height: 110rem;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+
+    div {
+        background-size: contain;
+        position: absolute;
+        top:5rem;
+        left: calc(50% - 35rem);
+        width: 80rem;
+        height: 100rem;
+        -webkit-animation-name: bounceIn;
+        animation-name: bounceIn;
+        animation-duration: 0.5s;
+    }
+
+    .ilike-one {
+        background: no-repeat url("../../../public/certificates/ilike_1_b.jpg"); 
+        background-size: contain;
+    }
+
+    .ilike-two {
+        background: no-repeat url("../../../public/certificates/ilike_2_b.jpg"); 
+        background-size: contain;
+    }
+
+    .biglif-one {
+        background: no-repeat url("../../../public/certificates/biglif_1_b.jpg");
+        background-size: contain;
+    }
+
+    .biglif-two {
+        background: no-repeat url("../../../public/certificates/biglif_2_b.jpg");
+        background-size: contain;
+    }
+
+    .biglif-three {
+        background: no-repeat url("../../../public/certificates/biglif_3_b.jpg");
+        background-size: contain;
+    }
+
+    .allegro-one{
+        background: no-repeat url("../../../public/certificates/allegro_1_b.jpg");
+        background-size: contain;
+    }
+
+    .glora-one{
+        background: no-repeat url("../../../public/certificates/glora_1_b.jpg");
+        background-size: contain;
+    }
+
+    .orh-one{
+        background: no-repeat url("../../../public/certificates/orh_1_b.jpg");
+        background-size: contain;
+    }
+    .orh-two{
+        background: no-repeat url("../../../public/certificates/orh_2_b.jpg");
+        background-size: contain;
+    }
+    .orh-three{
+        background: no-repeat url("../../../public/certificates/orh_3_b.jpg");
+        background-size: contain;
+    }
+    .orh-four{
+        background: no-repeat url("../../../public/certificates/orh_4_b.jpg");
+        background-size: contain;
+    }
+
+    .nv-one{
+        background: no-repeat url("../../../public/certificates/nv_1_b.jpg");
+        background-size: contain;
+    }
+    .nv-two{
+        background: no-repeat url("../../../public/certificates/nv_2_b.jpg");
+        background-size: contain;
+    }
+
+}
+
+@keyframes bounceIn {
+  from {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}

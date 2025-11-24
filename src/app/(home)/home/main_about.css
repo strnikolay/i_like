@@ -1,0 +1,148 @@
+
+.o-nas-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: -130px;   
+}
+
+.o-nas-item {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 6rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.one {
+    background: url('./outer1_2.png') no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 42rem;
+    margin-left: -2rem;
+}
+
+.two {
+    background: url('./outer2_2.png') no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 42rem; 
+    margin-left: 0 ;
+}
+
+.three {
+    background: url('./outer3_2.png') no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 42rem; 
+}
+
+.four {
+    background: url('./outer4_2.png') center/100% no-repeat;
+    /*background-size: 100%;
+    background-position: center;*/
+    height: 42rem; 
+    margin-right: -3rem;
+}
+
+.image-wrap {
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+}
+
+.one .image-wrap img {
+    margin-top: 6.3rem;
+}
+
+.two .image-wrap img {
+    margin-top: 12.5rem;
+}
+
+.three .image-wrap img {
+    margin-top: 12.5rem;
+}
+
+.four .image-wrap img {
+    margin-top: 6.8rem;
+}
+
+
+.o-nas-content {
+    width: 20rem;
+    text-align: center;
+    color: #777;
+    font-size: 1.5rem;
+} 
+  
+.o-nas-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+   
+
+  
+
+  
+@media (max-width: 1024px) {
+    .o-nas-item {
+          width: 24rem;
+          padding-bottom: 8rem;
+    }
+
+    .image-wrap {
+        width: 16rem;
+        height: 16rem;
+    }
+
+
+      .o-nas-content{
+        width: 17rem;
+        font-size: 1.4rem;
+      }
+}
+
+@media (max-width: 767px) {
+    .o-nas-item {
+        width: 18rem;
+        padding-bottom: 9rem;
+    }
+
+    .one, .two, .three, .four{
+        height: 39rem;
+    }
+
+    .one .image-wrap img {
+        margin-top: 10rem;
+    }
+
+    .two .image-wrap img {
+        margin-top: 12.5rem;
+    }
+
+    .three .image-wrap img {
+        margin-top: 12.5rem;
+    }
+
+    .four .image-wrap img {
+        margin-top: 10rem;
+    }
+
+    .image-wrap {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .o-nas-title {
+        font-size: 1.8rem;
+    }
+    
+    .o-nas-content{
+        width: 14rem;
+        font-size: 1.4rem;
+    }
+}

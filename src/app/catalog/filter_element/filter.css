@@ -1,0 +1,161 @@
+.filter {
+    display: flex;
+}
+.filter-left-wrap {
+    width: 100%;
+    /*height: 200px;*/
+}
+
+.filter-left-wrap input{
+    display: none;
+}
+
+.size-filter, .brand-filter, .colors-filter {
+    width: 100%;
+    display: flex;
+    margin: 1rem;
+    position: relative;
+}
+.brand-filter{
+    margin-left: 3rem;
+} 
+.brand-filter .border-wrap {
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 1rem;
+}
+.brand-filter .border-wrap label {
+    border-left: 1px solid #000;
+}
+.brand-filter .border-wrap .input-wrap:first-child label{
+    border-left: 0;
+}
+
+
+.size-filter {
+    width: 68rem;
+}
+.size-wrap{
+    border: 1px solid #000;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0 2rem;
+    width: 90rem;
+}
+.sizeFilter-item {
+    width: 100%;
+    display: flex;
+    margin-left: var(--sizeMargin) ;
+}
+
+
+
+
+
+
+.next, .prev {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;    
+}
+
+.next{
+    right: 0;
+    top: 15%;
+    transform: rotate(-90deg);
+    background: url(../../../../public/grey-arrow-down.svg) no-repeat;
+}
+
+.prev{
+    top: 18%;
+    transform: rotate(90deg);
+    background: url(../../../../public/grey-arrow-down.svg) no-repeat;
+}
+
+
+.size-p:disabled {
+    display: none;
+}
+
+.size-n:disabled {
+    display: none;
+}
+
+
+.color-p:disabled {
+    display: none;
+}
+
+.color-n:disabled {
+    display: none;
+}
+
+.colors-filter {
+    width: 68rem;
+}
+.color-wrap{
+    border: 1px solid #000;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 0 2rem;
+    width: 90rem;
+}
+.colorFilter-item {
+    width: 100%;
+    display: flex;
+    margin-left: var(--colorMargin) ;
+}
+
+.brand-filter .input-wrap {
+            width: 8rem;
+            height: 2.5rem;
+            font-size: 1.4rem;
+            text-align: center;
+}
+
+
+.size-filter .input-wrap {
+            width: 5rem;
+            height: 2.5rem;
+            font-size: 1.4rem;
+            text-align: center;
+}
+
+.colors-filter .input-wrap {
+            min-width: 8rem;
+            height: 2.5rem;
+            font-size: 1.4rem;
+            text-align: center;
+}
+
+.filter-left-wrap label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid #000; */               
+}
+
+.size-filter label, .colors-filter label {
+    border-left: 1px solid #000; 
+}
+
+
+.filter-left-wrap .input-wrap:first-child label{
+    border-radius: 10px 0 0 10px ;
+}
+
+.filter-left-wrap .input-wrap:last-child label{
+            border-radius: 0 10px 10px 0 ;
+}
+    
+
+.color-item {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 3px;
+        border: 1px solid #000;
+        margin-right: 5px;
+        box-shadow: 1px 1px 3px #000000bb;
+}

@@ -1,0 +1,22 @@
+{
+    "liveServer.settings.port": 5501,
+    "files.exclude": {
+        "**/package-lock.json": true,
+        //"**/package.json": true,
+        "**/.gitignore": true,
+        "**/node_modules": true,
+        "**/README.md": true,
+        "**/eslint.config.js": true, 
+        "**/store.yml": true,
+        "**/.next": true,
+        "**/eslint_config_mjs": true,
+        "**/eslint.config.mts": true,
+        "**/next-env.d.ts": true,
+        "**/next.config.ts": true,
+        "**/favicon.ico": true,
+        "**/tsconfig.json": true,
+        "**/css.d.ts": true,
+        
+    },
+    "material-icon-theme.activeIconPack": "react"
+}

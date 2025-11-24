@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2025-08-25T11:20:35+03:00">
+	<shop>
+		<name>женское нижнее белье</name>
+		<company>айлайк</company>
+		<url>http://generation-l.tilda.ws</url>
+		<platform>Tilda Publishing</platform>
+		<version>1.0</version>
+		<currencies>
+			<currency id="RUR" rate="1"/>
+		</currencies>
+		<categories>
+			<category id="430276750332">All</category>
+			<category id="706190240422">Бескостные</category>
+			<category id="787453335102">Мягкая чашка</category>
+			<category id="306759620472">Полупоролон</category>
+			<category id="432898936742">Поролон</category>
+			<category id="926113452662">Пуш-ап</category>
+			<category id="532607575962">Формованная чашка</category>
+			<category id="225120164852">Трусы</category>
+			<category id="611574667492">Грации и Полуграции</category>
+			<category id="897612421912">Утягивающие трусы</category>
+			<category id="441176805822">Топы</category>
+			<category id="383850509282">Комбинации, подъюбники</category>
+			<category id="328314200652">Рейтузы, панталоны, колготки</category>
+			<category id="250421333732">Трусы Россия</category>
+		</categories>
+		<offers>
+		<offer id="411510502812">
+			<name>577 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6139-6262-4038-a139-663962393639/73049832.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/411510502812-577-ailaik-byust</url>
+			<count>9999</count>
+			<price>750.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>706190240422</categoryId>
+		</offer>
+		<offer id="396344695402">
+			<name>104 бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/396344695402-104-byust</url>
+			<count>9999</count>
+			<price>770.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>706190240422</categoryId>
+		</offer>
+		<offer id="610784631582">
+			<name>808 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/610784631582-808-ailaik-byust</url>
+			<count>9999</count>
+			<price>970.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>706190240422</categoryId>
+		</offer>
+		<offer id="485637715852">
+			<name>0215 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3134-3730-4239-b066-366531306262/81980899.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/485637715852-0215-ailaik-byust</url>
+			<count>9999</count>
+			<price>580.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>706190240422</categoryId>
+		</offer>
+		<offer id="763166122022">
+			<name>0106 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3935-3831-4238-b434-663132663331/83478043.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/763166122022-0106-ailaik-byust</url>
+			<count>9999</count>
+			<price>400.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>706190240422</categoryId>
+		</offer>
+		<offer id="696220647812">
+			<name>10122 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3139-3462-4632-b034-383565363839/69540384.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/696220647812-10122-ailaik-byust</url>
+			<count>9999</count>
+			<price>880.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>706190240422</categoryId>
+		</offer>
+		<offer id="376492762672">
+			<name>10294 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3962-6637-4661-b831-633339633731/88957762.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/376492762672-10294-ailaik-byust</url>
+			<count>9999</count>
+			<price>750.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="958890202492">
+			<name>777-1 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3435-6366-4238-b139-363739333732/78114080.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/958890202492-777-1-ailaik-byust</url>
+			<count>9999</count>
+			<price>780.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="531018682802">
+			<name>777 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/531018682802-777-ailaik-byust</url>
+			<count>9999</count>
+			<price>780.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="202498855852">
+			<name>9010 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3735-3538-4534-a139-653565323735/27425734.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/202498855852-9010-ailaik-byust</url>
+			<count>9999</count>
+			<price>1080.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="573367511742">
+			<name>10591 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/573367511742-10591-ailaik-byust</url>
+			<count>9999</count>
+			<price>970.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="890267470392">
+			<name>1031 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/890267470392-1031-ailaik-byust</url>
+			<count>9999</count>
+			<price>780.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="765824341872">
+			<name>10557 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6430-6432-4438-a633-623732616536/66809760.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/765824341872-10557-ailaik-byust</url>
+			<count>9999</count>
+			<price>980.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="295742315952">
+			<name>10071 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/295742315952-10071-ailaik-byust</url>
+			<count>9999</count>
+			<price>990.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="688702944142">
+			<name>11294 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/688702944142-11294-ailaik-byust</url>
+			<count>9999</count>
+			<price>850.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="731562900542">
+			<name>5635 жаккард АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/731562900542-5635-zhakkard-ailaik-byust</url>
+			<count>9999</count>
+			<price>1050.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="639958053522">
+			<name>71810 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/639958053522-71810-ailaik-byust</url>
+			<count>9999</count>
+			<price>1360.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>787453335102</categoryId>
+		</offer>
+		<offer id="149198017982">
+			<name>028 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3866-6137-4766-b336-326664653366/11824817.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/149198017982-028-ailaik-byust</url>
+			<count>9999</count>
+			<price>890.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="295561477502">
+			<name>888 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/295561477502-888-ailaik-byust</url>
+			<count>9999</count>
+			<price>920.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="150306772112">
+			<name>800-1 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3537-3830-4335-b361-633636353365/87246491.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/150306772112-800-1-ailaik-byust</url>
+			<count>9999</count>
+			<price>790.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="475744004192">
+			<name>9000 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/475744004192-9000-ailaik-byust</url>
+			<count>9999</count>
+			<price>1250.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="625644167702">
+			<name>0152 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/625644167702-0152-ailaik-byust</url>
+			<count>9999</count>
+			<price>1270.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="879770460232">
+			<name>1125 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/879770460232-1125-ailaik-byust</url>
+			<count>9999</count>
+			<price>980.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="188927910532">
+			<name>800 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3735-3838-4836-a337-336562376364/72319503.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/188927910532-800-ailaik-byust</url>
+			<count>9999</count>
+			<price>790.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="946431544822">
+			<name>860 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3936-6637-4961-b266-356134306361/15674719.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/946431544822-860-ailaik-byust</url>
+			<count>9999</count>
+			<price>1280.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="738115054842">
+			<name>82-04 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3936-3664-4464-b261-383865653638/31155324.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/738115054842-82-04-ailaik-byust</url>
+			<count>9999</count>
+			<price>850.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="995933232012">
+			<name>5050 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3539-3832-4130-a464-363337626562/63824876.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/995933232012-5050-ailaik-byust</url>
+			<count>9999</count>
+			<price>950.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="689346543122">
+			<name>9000-3620 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6436-3137-4264-a561-626230616237/38542438.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/689346543122-9000-3620-ailaik-byust</url>
+			<count>9999</count>
+			<price>1250.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="100018997542">
+			<name>888-8 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6461-6234-4036-a363-343038313931/77383269.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/100018997542-888-8-ailaik-byust</url>
+			<count>9999</count>
+			<price>1150.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>306759620472</categoryId>
+		</offer>
+		<offer id="245185338382">
+			<name>2031 бюст Шарлотта</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/245185338382-2031-byust-sharlotta</url>
+			<count>9999</count>
+			<price>960.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>432898936742</categoryId>
+		</offer>
+		<offer id="214857231402">
+			<name>3211 бюст Лайма</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3462-3633-4664-b731-363566373263/86001643.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/214857231402-3211-byust-laima</url>
+			<count>9999</count>
+			<price>990.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>432898936742</categoryId>
+		</offer>
+		<offer id="669949275882">
+			<name>1037 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/669949275882-1037-ailaik-byust</url>
+			<count>9999</count>
+			<price>690.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>432898936742</categoryId>
+		</offer>
+		<offer id="407664057822">
+			<name>0167 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/407664057822-0167-ailaik-byust</url>
+			<count>9999</count>
+			<price>980.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>432898936742</categoryId>
+		</offer>
+		<offer id="925121290692">
+			<name>167 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/925121290692-167-ailaik-byust</url>
+			<count>9999</count>
+			<price>980.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>432898936742</categoryId>
+		</offer>
+		<offer id="499860392482">
+			<name>10630 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6635-6163-4764-b963-326637323961/52989766.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/499860392482-10630-ailaik-byust</url>
+			<count>9999</count>
+			<price>1140.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>432898936742</categoryId>
+		</offer>
+		<offer id="730496197672">
+			<name>3061 бюст Лика</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6561-6537-4435-b165-643136326461/19974674.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/730496197672-3061-byust-lika</url>
+			<count>9999</count>
+			<price>970.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>432898936742</categoryId>
+		</offer>
+		<offer id="741184635622">
+			<name>3091 бюст Бриджит</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3264-3365-4633-a561-623766653337/31454885.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/741184635622-3091-byust-bridzhit</url>
+			<count>9999</count>
+			<price>1050.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>432898936742</categoryId>
+		</offer>
+		<offer id="681093153102">
+			<name>3305 бюст Вика</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3062-3362-4236-b631-343638316330/25331424.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/681093153102-3305-byust-vika</url>
+			<count>9999</count>
+			<price>790.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>926113452662</categoryId>
+		</offer>
+		<offer id="803509741912">
+			<name>2105 бюст Вика</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/803509741912-2105-byust-vika</url>
+			<count>9999</count>
+			<price>820.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>926113452662</categoryId>
+		</offer>
+		<offer id="930557936412">
+			<name>1124 Айлайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/930557936412-1124-ailaik-byust</url>
+			<count>9999</count>
+			<price>900.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>926113452662</categoryId>
+		</offer>
+		<offer id="378342595502">
+			<name>10069 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3039-3964-4934-b534-613336646536/82674421.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/378342595502-10069-ailaik-byust</url>
+			<count>9999</count>
+			<price>720.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>532607575962</categoryId>
+		</offer>
+		<offer id="630115070262">
+			<name>990 АйЛайк бюст</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/630115070262-990-ailaik-byust</url>
+			<count>9999</count>
+			<price>1250.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>532607575962</categoryId>
+		</offer>
+		<offer id="839787068302">
+			<name>2568 трусы Элизабет</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/839787068302-2568-trusi-elizabet</url>
+			<count>9999</count>
+			<price>490.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="693084954532">
+			<name>55041 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3133-6636-4135-b530-326363393731/65796381.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/693084954532-55041-ailaik-trusi</url>
+			<count>9999</count>
+			<price>270.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="749509329482">
+			<name>470 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6163-3534-4161-b332-383430376563/82008728.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/749509329482-470-ailaik-trusi</url>
+			<count>9999</count>
+			<price>330.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="910690286642">
+			<name>55031 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3362-3832-4236-a135-613065333864/69274410.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/910690286642-55031-ailaik-trusi</url>
+			<count>9999</count>
+			<price>330.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="835559048112">
+			<name>55048 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3338-6232-4430-b834-663534386565/58310065.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/835559048112-55048-ailaik-trusi</url>
+			<count>9999</count>
+			<price>330.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="647223608862">
+			<name>0130 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3938-6134-4037-b739-373765303966/28111826.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/647223608862-0130-ailaik-trusi</url>
+			<count>9999</count>
+			<price>500.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="601842542992">
+			<name>0513 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/601842542992-0513-ailaik-trusi</url>
+			<count>9999</count>
+			<price>650.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="895370702542">
+			<name>655 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/895370702542-655-ailaik-trusi</url>
+			<count>9999</count>
+			<price>520.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="270358575012">
+			<name>0120 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6631-3833-4965-b037-336532313437/68346352.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/270358575012-0120-ailaik-trusi</url>
+			<count>9999</count>
+			<price>500.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="950880651052">
+			<name>720 трусы</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6462-3233-4966-a436-393038386163/54591380.jpg</picture>
+			<url>http://generation-l.tilda.ws/tproduct/950880651052-720-trusi</url>
+			<count>9999</count>
+			<price>590.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="904934296772">
+			<name>2050 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6664-6437-4839-b663-356162303563/10695161.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/904934296772-2050-ailaik-trusi</url>
+			<count>9999</count>
+			<price>580.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>225120164852</categoryId>
+		</offer>
+		<offer id="161297898482">
+			<name>001 АйЛайк грация</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/161297898482-001-ailaik-gratsiya</url>
+			<count>9999</count>
+			<price>2200.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>611574667492</categoryId>
+		</offer>
+		<offer id="656082501002">
+			<name>002 АйЛайк грация</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/656082501002-002-ailaik-gratsiya</url>
+			<count>9999</count>
+			<price>1510.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>611574667492</categoryId>
+		</offer>
+		<offer id="984981192252">
+			<name>1007 АйЛайк утяжка</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/984981192252-1007-ailaik-utyazhka</url>
+			<count>9999</count>
+			<price>850.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>897612421912</categoryId>
+		</offer>
+		<offer id="884530864942">
+			<name>1002 АйЛайк трусы</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/884530864942-1002-ailaik-trusi</url>
+			<count>9999</count>
+			<price>700.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>897612421912</categoryId>
+		</offer>
+		<offer id="259059613932">
+			<name>1006 АйЛайк утяжка</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/259059613932-1006-ailaik-utyazhka</url>
+			<count>9999</count>
+			<price>720.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>897612421912</categoryId>
+		</offer>
+		<offer id="392913031422">
+			<name>1004 АйЛайк утяжка</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/392913031422-1004-ailaik-utyazhka</url>
+			<count>9999</count>
+			<price>630.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>897612421912</categoryId>
+		</offer>
+		<offer id="165318046532">
+			<name>1001 АйЛайк трусы-ажур</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6530-3637-4438-b938-336433313965/51327143.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/165318046532-1001-ailaik-trusi-azhur</url>
+			<count>9999</count>
+			<price>590.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>897612421912</categoryId>
+		</offer>
+		<offer id="216737068842">
+			<name>10008 АйЛайк топ</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor6630-3330-4033-a562-383264616265/45627401.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/216737068842-10008-ailaik-top</url>
+			<count>9999</count>
+			<price>590.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>441176805822</categoryId>
+		</offer>
+		<offer id="954830964342">
+			<name>3008 АйЛайк подъюбник</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/954830964342-3008-ailaik-podyubnik</url>
+			<count>9999</count>
+			<price>520.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>383850509282</categoryId>
+		</offer>
+		<offer id="361838333702">
+			<name>370 АйЛайк комбинация</name>
+			<vendor>АйЛайк</vendor>
+			<picture>https://static.tildacdn.com/stor3637-6237-4265-a638-366231616561/16238218.png</picture>
+			<url>http://generation-l.tilda.ws/tproduct/361838333702-370-ailaik-kombinatsiya</url>
+			<count>9999</count>
+			<price>530.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>383850509282</categoryId>
+		</offer>
+		<offer id="402482676092">
+			<name>3007 АйЛайк комбинация</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/402482676092-3007-ailaik-kombinatsiya</url>
+			<count>9999</count>
+			<price>620.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>383850509282</categoryId>
+		</offer>
+		<offer id="985516857232">
+			<name>103 АйЛайк панталоны</name>
+			<vendor>АйЛайк</vendor>
+			<url>http://generation-l.tilda.ws/tproduct/985516857232-103-ailaik-pantaloni</url>
+			<count>9999</count>
+			<price>480.00</price>
+			<currencyId>RUR</currencyId>
+			<categoryId>328314200652</categoryId>
+		</offer>
+		</offers>
+	</shop>
+</yml_catalog>
