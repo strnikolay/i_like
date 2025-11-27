@@ -26,7 +26,7 @@ class store {
     if(userEmail){
       await axios_Service.get_user(userEmail)
         .then((res)=>{
-          //console.log(res)
+          //console.log("34", res)
           const tempUser:IUser = res.data.user
           if(res.data.cart){
 

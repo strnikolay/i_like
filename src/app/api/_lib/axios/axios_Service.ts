@@ -1,4 +1,4 @@
-import { IUser, IContact, IcartItem, IProduct, IOrderParams } from "@/store/interfaces";
+import { IUser, IContact, IcartItem, IProduct, IOrderParams, IcartItemParam } from "@/store/interfaces";
 import $api from "./axios";
 import {AxiosResponse} from 'axios';
 import { Store } from "@/store/store";
@@ -56,9 +56,13 @@ export default class axios_Service {
 
     static async search (query: string): Promise<IProduct[]> {
         console.log(query)
-    return (await $api.get<IProduct[]>("products/search", { params: { query } }))
-      .data;
-};
+        return (await $api.get<IProduct[]>("products/search", { params: { query } })).data;
+    };
+
+    static async add_new_params_to_product (params: IcartItemParam): Promise<IcartItemParam> {
+        //console.log(productParams)
+        return (await $api.post<IcartItemParam>("cart/add-params", { params } )).data;
+    };
 
     /*static async refresh(accesstoken: string, refreshtoken: string): Promise<AxiosResponse<AuthResponse>> {
         return $api.post<AuthResponse>('/refresh', {accesstoken, refreshtoken})

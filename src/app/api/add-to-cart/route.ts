@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
 
   //console.log("route add-to-cart", data)
 
-  const cartItem:IcartItem = await prisma.cartItem.create({
+  const cartItem = await prisma.cartItem.create({
     data: {
       orderId: data.orderId,
       productId: data.productId
@@ -18,43 +18,18 @@ export async function POST(req: NextRequest) {
   const itemParams = await prisma.cartItemParam.create({
     data:{
       itemId: cartItem.id,
-      size:0,
-      color:0,
+      size:-1,
+      color:-1,
       count:0
     }
   })
-  cartItem.params=[itemParams]
+  const returnedCart:IcartItem = {
+    id:cartItem.id,
+    orderId:cartItem.orderId,
+    productId:cartItem.productId,
+    itemParams:[itemParams]
+  }
 
-  return NextResponse.json(cartItem)
-
-  /*if(data.cart){
-    const updateOrder = await prisma.order.update({
-      where: {
-        id: data.cart.id,
-      },
-      data: {
-        productParams: data.cart.productParams,
-      },
-    })
-  }*/
-
-  //console.log("patch11", req)
-  //console.log("data", data)
-  //console.log("data в route",data.email)
-  /*const res = await prisma.user.findUnique({
-    relationLoadStrategy: 'join',
-    where: {
-      email: data.email,
-    },
-    include: {
-      contact: true,
-      adress: true,
-      orderHistory: true,
-    }
-  })*/
-
-  //console.log("route", res)
-    
-  //return NextResponse.json(res)
+  return NextResponse.json(returnedCart)
 } 
  

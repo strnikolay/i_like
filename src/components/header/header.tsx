@@ -1,24 +1,14 @@
-'use client'
 import React from 'react';
-import Image from 'next/image';
 import "./header.css";
 
 import Link from 'next/link';
-import { useStore } from "@/store/storeProvidert";
-import { observer } from 'mobx-react';
 import { SearchInput } from './search-input';
-
-interface Props {
-  //isFixed:boolean;
-  //colors:Array<number>;
-}
-
-export const Header: React.FC<Props> = observer(() => {
-	const {Store, Cart_Store} = useStore();
-	const [dropdown, setDropdown] = React.useState(false)
-	//const [mobilemenu, setMobilemenu] = React.useState(false)
+import { Cart_Btn } from './header-component/cart-btn';
+import { Action_Btn } from './header-component/action-btn';
+import { Contact } from './header-component/contact';
 
 
+export const Header: React.FC = () => {
 
   	return (
   	<div className="header">
@@ -32,70 +22,9 @@ export const Header: React.FC<Props> = observer(() => {
 
 			<div className='header-btn-wrap'>
 					
-				<div className="contact-wrapper">
-					<div className="phone-icon">
-						<Image src="/header/fone-icon.svg" alt="iLikeOpt.ru" fill priority={false}/>
-					</div>
+				<Contact/>
 
-					<div className="contact-content">	
-
-						<div className="phone-number" onClick={() => setDropdown(!dropdown)}>
-							+7 (925) 518-77-67
-							<div className="grey-arrow-down" />
-						</div>
-
-						{dropdown&&<div className="dropdown-menu">
-							<div>
-								<div className='img-wrap'>
-									<Image src="/megafon.png" fill alt=""/>
-								</div>
-								<span>+7(925) 518-77-67 -	АйЛайк</span>
-							</div>
-							<div>
-								<div className='img-wrap'>
-									<Image src="/megafon.png" fill alt=""/>
-								</div>
-								<span>+7(926) 775-96-22 - Федор	Власов, куратор отдела продаж</span>
-							</div>
-							<div>
-								<div className='img-wrap'>
-									<Image src="/telefon.png" fill alt=""/>
-								</div>
-								<span className="dropdown-phones">+7(925) 090-00-10</span>
-							</div>
-							<div>
-								<div className='img-wrap'>
-									<Image src="/telefon.png" fill alt=""/>
-								</div>
-								<span className="dropdown-phones">+7(925) 090-33-38</span>
-							</div>
-							<div>
-								<div className='img-wrap'>
-									<Image src="/telefon.png" fill alt=""/>
-								</div>
-								<span className="dropdown-phones">+7(495) 518-77-67</span>
-							</div>
-							... или
-							<div>
-								<Link href={'/#'} className="btn openrecall">Закажите	обратный звонок</Link>
-							</div>
-						</div>}
-
-						<a className="openrecall">
-							Заказать обратный звонок
-						</a>
-
-
-					</div>
-				</div>
-
-				{Store.isAuth?
-					<Link href="/cart" className='cart-btn-wrap'>
-						<Image src="/header/cart-svg.svg" alt="iLikeOpt.ru" fill priority={false}/>
-						<div className='header-cart-sum'>{Cart_Store.summInCart} р.</div>
-					</Link>
-					:null
-				}
+				<Cart_Btn />
 			
 			</div>	
 
@@ -135,39 +64,10 @@ export const Header: React.FC<Props> = observer(() => {
 
 			</nav>
 
-			{Store.isAuth?
-			<div className='login-wrap'>
-				<div className='nav-btn'>
-					<Link className='fav-link' href="/favourites"/>
-				</div>
-				<button onClick={() => Store.logout()} className="logout">
-					<Image src="/header/logout-svg.svg" title="iLikeOpt.ru" alt="iLikeOpt.ru" fill/>
-				</button>
-				<Link href="/profile" className="profile">
-					Личный кабинет
-				</Link>	
-				<button 
-					//onClick={() => setMobilemenu(true)} 
-					className="burger-menu"
-				>
-					<Image src="/burger.svg" title="iLikeOpt.ru" alt="iLikeOpt.ru" fill/>
-				</button>
-
-			</div>
-			:
-			<div className='login-wrap'>
-				<button onClick={() => Store.SetPopup('Login')} className="login">
-					Войти/Зарегистрироваться
-				</button>
-				<button 
-					//onClick={() => setMobilemenu(true)} 
-					className="burger-menu"
-				>
-				</button>
-			</div>}	
+			<Action_Btn/>
 			
 				
 		</div>
 	</div>
   );
-});
+};

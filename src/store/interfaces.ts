@@ -17,7 +17,7 @@ export interface IUser {
     inn:number;
     contact:IContact[];
     adress:IAdress[];
-    orderHistory?:IOrderParams[];
+    orderHistory:IOrderParams[];
     fav:string[];
     cart:IOrderParams;
 }
@@ -28,8 +28,8 @@ export interface IOrderParams {
     contact:number;
     deliveryType: string;
     adress:number;
-    transport?:string;
-    productParams?: IcartItem[]
+    transport:string;
+    productParams: IcartItem[]
 }
 
 export type Tcolor = number[];
@@ -52,11 +52,18 @@ export interface IProduct {
     sizes: sizes[]
 }
 
+export interface IProductInCart {
+    id: number,
+    orderId:number,
+    product:IProduct,
+    itemParams: IcartItemParam[]
+}
+
 export interface IcartItem {
     id: number,
     orderId:number,
     productId:string,
-    params?: IcartItemParam[]  
+    itemParams: IcartItemParam[]  
 }
 
 export interface IcartItemParam {

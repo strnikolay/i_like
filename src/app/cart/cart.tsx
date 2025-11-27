@@ -3,7 +3,7 @@ import "./cart.css";
 import {FC, useEffect, useState } from "react";
 import { useStore } from "@/store/storeProvidert";
 import { mockdata} from '@/api/db';
-import {IcartItem, IProduct} from "@/store/interfaces";
+import {IcartItem, IProduct, IProductInCart} from "@/store/interfaces";
 import { observer } from 'mobx-react';
 import Cart_item from "./cart_item";
 
@@ -12,22 +12,40 @@ import Cart_item from "./cart_item";
 
 const CartList:FC = observer(() => {
   const {Store, Cart_Store} = useStore();
-  const [cartList, setCartList] = useState<Array<IProduct>>([])
+  const [cartList, setCartList] = useState<Array<IProductInCart>>([])
+  const [Loading, setLoading] = useState<Boolean>(true)
   //const [summ, setSumm] = useState<number>(0)
  
   useEffect(()=>{
-      const tempArr:IProduct[] = []
-      Store.user.cart.forEach((elInCart:IcartItem)=>{
-        const el = mockdata.find((elInDB:IProduct)=> elInDB.id===elInCart.id)
-        if(el){tempArr.push(el)}
-      })
-      //console.log(tempArr)
-      setCartList(tempArr)
+    //console.log(Store.user.cart)
+      const tempArr:IProductInCart[] = []
+      if(Store.user.cart){
+        Store.user.cart.productParams.forEach((elInCart:IcartItem)=>{
+          console.log("el", elInCart)
+          const el = mockdata.find((elInDB:IProduct)=> elInDB.id===elInCart.productId)
+          
+          if(el){
+            const tempProduct:IProductInCart = {
+              id:elInCart.id,
+              orderId:elInCart.orderId,
+              product:el,
+              itemParams:elInCart.itemParams
+            }
+            tempArr.push(tempProduct)}
+        })
+        //console.log("temparr",tempArr)
+        setCartList(tempArr)
+        setLoading(false)
+      }
   },[Store.user.cart])
 
-  useEffect(()=>{
+  /*useEffect(()=>{
     Cart_Store.CalcSummOfProductInCart();
-  },[Cart_Store.isParamsUpdate])
+  },[Cart_Store.isParamsUpdate])*/
+  useEffect(()=>{
+    //console.log("cart",Store.user.cart)
+    //console.log("77",cartList)
+  },[cartList])
 
   return (
     <div className="cart-list-wrap container">
@@ -35,7 +53,7 @@ const CartList:FC = observer(() => {
       <h2>Выбрано {cartList.length} товара на общую сумму {Cart_Store.summInCart} руб.</h2>
       <h2>Выберите товара еще на {30000 - Cart_Store.summInCart} руб. и получите скидку 2%</h2>
       <div className="cart-product-wrap">
-          {cartList.map((el:IProduct,index:number)=>
+          {!Loading&&cartList.map((el:IProductInCart,index:number)=>
             <Cart_item key={index} item={el} itemIndex={index}/>
           )}
       </div>

@@ -2,72 +2,130 @@
 import {FC, useEffect, useState } from "react";
 import { useStore } from "@/store/storeProvidert";
 import { brandList, categoryList} from '@/api/db';
-import {IProduct, IcartItem, IcartItemParam} from "@/store/interfaces";
+import {IProduct, IProductInCart, IcartItem, IcartItemParam} from "@/store/interfaces";
 import { observer } from 'mobx-react';
 import ParamsInProduct from "./ParamsInProduct";
 
 interface Props {
-  item:IProduct;
+  item:IProductInCart;
   itemIndex: number;
 }
 
+
+/**ItemParams Пустой */
 const Cart_item:FC<Props> = observer(({item, itemIndex}) => {
   const {Store, Cart_Store} = useStore();
+
+
   const [itemParams, setItemParams] = useState<IcartItemParam[]>([]);
   const [itemCostSumm, setItemCostSumm] = useState<number>(0);
   const [isCountUpdate, setIsCountUpdate] = useState<boolean>(false);
   const [itemSumm, setItemSumm] = useState<number>(0);
+  const [paramsDone, setParamsDone] = useState<boolean>(false);
  
   useEffect(()=>{
-    const tempParams:IcartItem|undefined = Store.user.cart.find((elInCart:IcartItem)=>item.id===elInCart.id)
+    //console.log(item)
+    if(Store.user.cart){
+    const productInCart = Store.user.cart.productParams.find((elInCart:IcartItem)=>{
+      item.product.id===elInCart.productId
+    })
+    //console.log("876", productInCart)
 
-    if(tempParams){
-      //console.log("params", tempParams.params[0].count)
-      setItemParams(tempParams.params)
+    if(productInCart&&productInCart.itemParams){
+      const tempItemParams:IcartItemParam[] = []
+      productInCart.itemParams.forEach((params)=>tempItemParams.push(params))
+      //console.log("params", tempItemParams)
+      setItemParams(tempItemParams)
     }
     Cart_Store.setIsParamsUpdate(false)
     //console.log("bpvtytybt", isCountUpdate)
     setIsCountUpdate(true)
-  },[Cart_Store.isParamsUpdate])
+    }
+  },[])
 
   useEffect(()=>{
     let tempCostSumm:number = 0
     let tempSumm:number = 0
-    Store.user.cart[itemIndex].params.forEach((param:IcartItemParam)=>{
+    /*Store.user.cart.params[itemIndex].forEach((param:IcartItemParam)=>{
       if(param.count>0){
         tempCostSumm = tempCostSumm + (item.price * param.count)
         tempSumm = tempSumm + param.count
       }
-    })
+    })*/
     
     setItemCostSumm(tempCostSumm)
     setItemSumm(tempSumm)
     setIsCountUpdate(false)
   },[isCountUpdate])
 
+  useEffect(()=>{
+
+    const done = (arr:IcartItemParam[])=>{
+
+      arr.forEach((el)=>{
+        if(el.count>0){
+          return true
+        } else {
+          return false
+        }
+
+      })
+      
+    }
+
+    if(itemParams.length===0||done(itemParams)){
+        //console.log("paramsDone")
+        setParamsDone(true)
+    }
+    /*if(itemParams.length>0&&isParamsDone){
+      setParamsDone(true)
+    }*/
+    //console.log("itemparams",itemParams)
+    //console.log("item",item)
+  },[itemParams])
+
+  useEffect(()=>{
+    //console.log("Store.user.cart",Store.user.cart)
+    console.log("item",itemParams)
+  },[itemParams])
+
+  //Cart_Store.addNewParamsToProductInCart(itemIndex)
+  const addParamsHandler = () =>{ 
+    const newParams:IcartItemParam[] = [{
+      id:0,
+      itemId: item.id, 
+      size: -1,
+      color: -1,
+      count: 0,
+    }]
+    const tempItemParams:IcartItemParam[] = itemParams!.concat(newParams)
+    setParamsDone(false)
+    setItemParams(tempItemParams)
+  }
+
   return (
     <details className="cart-item">
       <summary>
         <div>
-          {item.id} {categoryList[item.cat-1]} {brandList[item.brand]}
+          {item.product.id} {categoryList[item.product.cat-1]} {brandList[item.product.brand]}
         </div>
-        <div>Цена за ед: {item.price}</div>
+        <div>Цена за ед: {item.product.price}</div>
         <div>Выбраное всего:{itemSumm}</div>
         <div>Сумма: {itemCostSumm}</div>
       </summary>
       {itemParams.length>0?
         itemParams.map((params, index)=>
-          <ParamsInProduct key={index} item={item} params={params} itemIndex={itemIndex} paramsIndex={index} />
+          <ParamsInProduct key={index} item={item} params={params} itemIndex={itemIndex} paramsIndex={index} setParamsDone={()=>setParamsDone(true)}/>
         ):
         null
       }
               
-      <button 
+      {paramsDone?<button 
         className="add-btn" 
-        onClick={()=>Cart_Store.addNewParamsToProductInCart(itemIndex)}
+        onClick={addParamsHandler}
       >
         Добавить +
-      </button>
+      </button>:null}
     </details>
 
   )

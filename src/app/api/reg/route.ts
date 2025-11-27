@@ -5,7 +5,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(req: NextRequest) {
   const data = await req.json();
   
-  const user:IUser = await prisma.user.create({
+  const user = await prisma.user.create({
     data: {
       email: data.email,
       pass: data.pass,
@@ -29,7 +29,7 @@ export async function POST(req: NextRequest) {
       defaultAdress: true,
     }
   })
-  const order:IOrderParams = await prisma.order.create({
+  const order = await prisma.order.create({
     data: {
       userId: user.id,
       status: "inCart",
@@ -39,14 +39,22 @@ export async function POST(req: NextRequest) {
       transport:"",
     }
   })
- 
+  //order.productParams=[]
   //if(user&&contact)
-  user.contact = [contact]
-  user.adress = [adress]
-  order.productParams=[]
-  user.orderHistory = [order]
-  //console.log("111", user)
+  const returnedUser = {
+    id:user.id,
+    email:user.email,
+    pass:user.pass,
+    company:user.company,
+    inn:user.inn,
+    fav:user.fav,
+    contact:[contact],
+    adress:[adress],
+    orderHistory:[order],
+    cart:order
+  } 
 
 
-  return NextResponse.json(user);
+
+  return NextResponse.json(returnedUser);
 } 
