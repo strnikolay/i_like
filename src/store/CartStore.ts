@@ -43,22 +43,15 @@ class cartStore {
   }*/
 
   async addNewParamsToDb (params:IcartItemParam) {
-    //const productParams=Store.user.cart.productParams[itemIndex]
-    //console.log("store.addnewparams", params)
-    //console.log("до", tempUser.cart.productParams[itemIndex])
     const res = await axios_Service.add_new_params_to_product(params);
-    const tempuser = Store.user
+    //console.log("store.addnewparams response", res)
+    if(res){
+      Store.getUser()
+    }
+    /*const tempuser = Store.user
     const productIndex = tempuser.cart.productParams.findIndex((el)=>el.id===res.itemId)
     tempuser.cart.productParams[productIndex].itemParams.push(res)
-    Store.setUser(tempuser)
-    //console.log("111", productIndex)
-    //tempuser.cart.productParams.findIndex
-    //console.log("response", tempuser.cart.productParams)
-    //const params = {size:undefined, color:undefined, count:0}
-    //tempUser.cart.productParams[itemIndex].params.push(params)
-
-    //console.log("после", tempUser.cart[itemIndex])
-    //Store.setUser(tempUser)
+    Store.setUser(tempuser)*/
   }
 
 
@@ -75,7 +68,8 @@ class cartStore {
   }
 
   deleteParamsInCartItem (paramsId:number) {
-    const tempUser=Store.user
+    console.log(paramsId)
+    //const tempUser=Store.user
     //tempUser.cart![itemIndex].params.splice(paramsIndex, 1)
     //Store.setUser(tempUser)
     //localStorage.setItem("user", JSON.stringify(tempUser))

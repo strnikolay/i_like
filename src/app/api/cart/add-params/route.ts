@@ -5,7 +5,7 @@ export async function POST(req: NextRequest) {
   const data = await req.json();
   //console.log("11",data.itemId)
   const params = data.params
-  //console.log("22",params.itemId)
+  console.log("22",params)
 
   const ItemParams = await prisma.cartItemParam.create({
       data: {

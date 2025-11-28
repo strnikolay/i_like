@@ -17,11 +17,11 @@ const CartList:FC = observer(() => {
   //const [summ, setSumm] = useState<number>(0)
  
   useEffect(()=>{
-    //console.log(Store.user.cart)
+    //console.log("12", Store.user.cart)
       const tempArr:IProductInCart[] = []
       if(Store.user.cart){
         Store.user.cart.productParams.forEach((elInCart:IcartItem)=>{
-          console.log("el", elInCart)
+          //console.log("el", elInCart)
           const el = mockdata.find((elInDB:IProduct)=> elInDB.id===elInCart.productId)
           
           if(el){
@@ -53,8 +53,8 @@ const CartList:FC = observer(() => {
       <h2>Выбрано {cartList.length} товара на общую сумму {Cart_Store.summInCart} руб.</h2>
       <h2>Выберите товара еще на {30000 - Cart_Store.summInCart} руб. и получите скидку 2%</h2>
       <div className="cart-product-wrap">
-          {!Loading&&cartList.map((el:IProductInCart,index:number)=>
-            <Cart_item key={index} item={el} itemIndex={index}/>
+          {!Loading&&cartList.map((product:IProductInCart,index:number)=>
+            <Cart_item key={index} item={product} itemIndex={index}/>
           )}
       </div>
       <button className="order-next-btn" onClick={()=>Cart_Store.setCart_Stage("order")}>Оформить заказ</button>  

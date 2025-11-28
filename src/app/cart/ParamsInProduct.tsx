@@ -38,19 +38,15 @@ const ParamsInProduct:FC<Props> = observer(({item, params, setParamsDone}) => {
     e:React.ChangeEvent<HTMLSelectElement>
   ) =>{
     //console.log(e.target.value)
-    if(params.id&&selectedColor<0&&Count!==0){
+    /*if(params.id&&selectedColor<0&&Count!==0){
       const newParams = {itemId:params.id, size:selectedSize, color:selectedColor,count:Count}
-      console.log("j,yjdbnm lfyyst")
-    }
+      //console.log("j,yjdbnm lfyyst")
+    }*/
     setSelectedSize(Number(e.target.value))
   }
 
   const selectColorHandler = (e:React.ChangeEvent<HTMLSelectElement>) =>{
     setSelectedColor(Number(e.target.value))
-    /*if(Count===0){
-      setCount(1)
-      setParamsDone()    
-    }*/
   }
 
   /*useEffect(()=>{
@@ -71,7 +67,7 @@ const ParamsInProduct:FC<Props> = observer(({item, params, setParamsDone}) => {
   useEffect(()=>{
     
     if(selectedSize>0&&selectedColor>0&&Count===0){
-      //console.log("314",selectedSize>0)
+      //console.log("")
       setCount(1);
       const tempParams = {id:0, itemId:params.itemId, size:selectedSize, color:selectedColor, count:1};
       Cart_Store.addNewParamsToDb(tempParams);

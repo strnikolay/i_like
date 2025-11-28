@@ -17,31 +17,23 @@ const Cart_item:FC<Props> = observer(({item, itemIndex}) => {
   const {Store, Cart_Store} = useStore();
 
 
-  const [itemParams, setItemParams] = useState<IcartItemParam[]>([]);
+  const [itemParams, setItemParams] = useState<IcartItemParam[]>(item.itemParams);
   const [itemCostSumm, setItemCostSumm] = useState<number>(0);
   const [isCountUpdate, setIsCountUpdate] = useState<boolean>(false);
   const [itemSumm, setItemSumm] = useState<number>(0);
   const [paramsDone, setParamsDone] = useState<boolean>(false);
  
   useEffect(()=>{
-    //console.log(item)
-    if(Store.user.cart){
-    const productInCart = Store.user.cart.productParams.find((elInCart:IcartItem)=>{
-      item.product.id===elInCart.productId
-    })
-    //console.log("876", productInCart)
-
-    if(productInCart&&productInCart.itemParams){
-      const tempItemParams:IcartItemParam[] = []
-      productInCart.itemParams.forEach((params)=>tempItemParams.push(params))
-      //console.log("params", tempItemParams)
-      setItemParams(tempItemParams)
+    if(item.itemParams.length>0&&item.itemParams[item.itemParams.length-1].count>0){
+      setParamsDone(true)
+    } else if(itemParams.length===0){
+        //console.log("paramsDone")
+        setParamsDone(true)
     }
-    Cart_Store.setIsParamsUpdate(false)
-    //console.log("bpvtytybt", isCountUpdate)
-    setIsCountUpdate(true)
-    }
-  },[])
+    //console.log("zzz", item.itemParams[item.itemParams.length-1])
+    //console.log("ccc", item.itemParams.length)
+  
+  },[item])
 
   useEffect(()=>{
     let tempCostSumm:number = 0
@@ -58,7 +50,7 @@ const Cart_item:FC<Props> = observer(({item, itemIndex}) => {
     setIsCountUpdate(false)
   },[isCountUpdate])
 
-  useEffect(()=>{
+  /*useEffect(()=>{
 
     const done = (arr:IcartItemParam[])=>{
 
@@ -73,7 +65,7 @@ const Cart_item:FC<Props> = observer(({item, itemIndex}) => {
       
     }
 
-    if(itemParams.length===0||done(itemParams)){
+    if(itemParams.length===0){
         //console.log("paramsDone")
         setParamsDone(true)
     }
@@ -82,12 +74,12 @@ const Cart_item:FC<Props> = observer(({item, itemIndex}) => {
     }*/
     //console.log("itemparams",itemParams)
     //console.log("item",item)
-  },[itemParams])
+  //},[itemParams])*/
 
-  useEffect(()=>{
+  /*useEffect(()=>{
     //console.log("Store.user.cart",Store.user.cart)
     console.log("item",itemParams)
-  },[itemParams])
+  },[itemParams])*/
 
   //Cart_Store.addNewParamsToProductInCart(itemIndex)
   const addParamsHandler = () =>{ 
