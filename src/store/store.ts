@@ -12,7 +12,10 @@ class store {
   }
 
   user = {} as IUser;    
-  setUser(newuser: IUser) {this.user = newuser;}
+  setUser(newuser: IUser) {
+    //console.log("setUser", newuser)
+    this.user = newuser;
+  }
 
   isLoginOpen = true; 
   setIsLoginOpen(bool: boolean) {this.isLoginOpen = bool}
@@ -30,9 +33,11 @@ class store {
           const tempUser:IUser = res.data.user
           if(res.data.cart){
 
+            //console.log("getuser", res.data.productParams)
             tempUser.cart=res.data.cart
             tempUser.cart.productParams=res.data.productParams
 
+            //console.log("getuser", tempUser)
             this.setUser(tempUser);
             this.setAuth(true);
           }

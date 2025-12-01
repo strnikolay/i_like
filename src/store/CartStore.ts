@@ -48,31 +48,29 @@ class cartStore {
     if(res){
       Store.getUser()
     }
-    /*const tempuser = Store.user
-    const productIndex = tempuser.cart.productParams.findIndex((el)=>el.id===res.itemId)
-    tempuser.cart.productParams[productIndex].itemParams.push(res)
-    Store.setUser(tempuser)*/
   }
 
 
   isParamsUpdate = false;
   setIsParamsUpdate(bool: boolean) {this.isParamsUpdate = bool;}
 
-  updateParamsInDB (itemIndex:number, params:IcartItemParam, paramsIndex:number){
+  async updateParamsInDB (params:IcartItemParam){
     //console.log(params)
-    const tempUser=Store.user
-    //tempUser.cart!.productParams[itemIndex].splice(paramsIndex, 1, params)
-    Store.setUser(tempUser)
-    localStorage.setItem("user", JSON.stringify(tempUser))
-    this.setIsParamsUpdate(true)
+
+    const res = await axios_Service.update_params_to_product(params);
+    if(res){
+      Store.getUser()
+    }
+
   }
 
-  deleteParamsInCartItem (paramsId:number) {
-    console.log(paramsId)
-    //const tempUser=Store.user
-    //tempUser.cart![itemIndex].params.splice(paramsIndex, 1)
-    //Store.setUser(tempUser)
-    //localStorage.setItem("user", JSON.stringify(tempUser))
+  async deleteParamsInCartItem (paramsId:number) {
+    //console.log(paramsId)
+    const res = await axios_Service.delete_params_from_product(paramsId);
+    console.log("delete response",res)
+    if(res){
+      Store.getUser()
+    }
   }
 
   summInCart:number = 0;

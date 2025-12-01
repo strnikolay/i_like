@@ -64,6 +64,16 @@ export default class axios_Service {
         return (await $api.post<IcartItemParam>("cart/add-params", { params } )).data;
     };
 
+    static async update_params_to_product (params: IcartItemParam): Promise<IcartItemParam> {
+        //console.log(productParams)
+        return (await $api.patch<IcartItemParam>("cart/update-params", { params } )).data;
+    };
+
+    static async delete_params_from_product (paramsId: number): Promise<IcartItemParam> {
+        //console.log(productParams)
+        return (await $api.post("cart/delete-params", {paramsId})).data;
+    };
+
     /*static async refresh(accesstoken: string, refreshtoken: string): Promise<AxiosResponse<AuthResponse>> {
         return $api.post<AuthResponse>('/refresh', {accesstoken, refreshtoken})
     }*/

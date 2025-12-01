@@ -14,8 +14,8 @@
         "**/next-env.d.ts": true,
         "**/next.config.ts": true,
         "**/favicon.ico": true,
-        "**/tsconfig.json": true,
-        "**/css.d.ts": true,
+        //"**/tsconfig.json": true,
+        //"**/css.d.ts": true,
         
     },
     "material-icon-theme.activeIconPack": "react"

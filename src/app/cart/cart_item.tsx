@@ -11,7 +11,6 @@ interface Props {
   itemIndex: number;
 }
 
-
 /**ItemParams Пустой */
 const Cart_item:FC<Props> = observer(({item, itemIndex}) => {
   const {Store, Cart_Store} = useStore();
@@ -24,11 +23,13 @@ const Cart_item:FC<Props> = observer(({item, itemIndex}) => {
   const [paramsDone, setParamsDone] = useState<boolean>(false);
  
   useEffect(()=>{
+    //console.log("обновление item", item)
+    setItemParams(item.itemParams)
     if(item.itemParams.length>0&&item.itemParams[item.itemParams.length-1].count>0){
       setParamsDone(true)
     } else if(itemParams.length===0){
-        //console.log("paramsDone")
-        setParamsDone(true)
+      //console.log("paramsDone")
+      setParamsDone(true)
     }
     //console.log("zzz", item.itemParams[item.itemParams.length-1])
     //console.log("ccc", item.itemParams.length)
@@ -38,12 +39,12 @@ const Cart_item:FC<Props> = observer(({item, itemIndex}) => {
   useEffect(()=>{
     let tempCostSumm:number = 0
     let tempSumm:number = 0
-    /*Store.user.cart.params[itemIndex].forEach((param:IcartItemParam)=>{
+    item.itemParams.forEach((param:IcartItemParam)=>{
       if(param.count>0){
-        tempCostSumm = tempCostSumm + (item.price * param.count)
+        tempCostSumm = tempCostSumm + (item.product.price * param.count)
         tempSumm = tempSumm + param.count
       }
-    })*/
+    })
     
     setItemCostSumm(tempCostSumm)
     setItemSumm(tempSumm)
