@@ -14,7 +14,7 @@
     "css-vars-hook": "^0.8.3",
     "mobx": "^6.15.0",
     "mobx-react": "^9.2.1",
-    "next": "15.5.4",
+    "next": "15.5.9",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-responsive-carousel": "^3.2.23",
