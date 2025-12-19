@@ -25,9 +25,9 @@ export interface IUser {
 export interface IOrderParams {
     id:number;
     status:string;
-    contact:number;
+    contact:IContact;
     deliveryType: string;
-    adress:number;
+    adress:IAdress;
     transport:string;
     productParams: IcartItem[]
 }
@@ -41,7 +41,8 @@ export interface sizes {
 }
 
 export interface IProduct {
-    id: string;
+    id: number;
+    artikul:string;
     cat: number;
     brand: number;
     desc: string;

@@ -13,10 +13,11 @@ const Favourites:FC = observer(() => {
  
   useEffect(()=>{
       const tempArr:Array<IProduct> = []
+      if(Store.user.fav){
       Store.user.fav.forEach((id)=>{
-        const el = mockdata.find((el)=> el.id===id)
+        const el = mockdata.find((el)=> el.artikul===id)
         if(el){tempArr.push(el)}
-      })
+      })}
       //console.log(tempArr)
       setfavList(tempArr)
   },[Store.user.fav])

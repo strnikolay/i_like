@@ -38,7 +38,7 @@ const Product_card:FC<Props> = observer(({el, index}) => {
     return (
     <div key={index} className="product-card-wrap">
         <div className='title'>
-            id {el.id} {brand} {categoryList[el.cat]}
+            id {el.artikul} {brand} {categoryList[el.cat]}
         </div>
         <div className="image">
             <div className="images-add">
@@ -46,8 +46,8 @@ const Product_card:FC<Props> = observer(({el, index}) => {
             </div>
             <div className="sticker">Хит</div>
             {/*<div className="add-to-cart"></div>*/}
-            <AddToCartBTN id={el.id} />
-            <AddToFavBTN id={el.id} />
+            <AddToCartBTN id={el.artikul} />
+            <AddToFavBTN id={el.artikul} />
             <div className="rating">
                 <div className='star'></div>
                 4.5

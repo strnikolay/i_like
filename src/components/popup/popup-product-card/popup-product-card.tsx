@@ -44,7 +44,7 @@ export const Popup_product_card:FC<Props> = observer(() => {
 	useEffect(()=>{
 			//console.log(typeof Store.user.fav)
 			if(Store.user.fav&&product){
-				if(Store.user.fav.includes(product.id)){
+				if(Store.user.fav.includes(product.artikul)){
 				setIsFav(true)
 			} else {
 				setIsFav(false)
@@ -53,7 +53,7 @@ export const Popup_product_card:FC<Props> = observer(() => {
 
 		useEffect(()=>{
 			if(Store.user.cart&&product){
-			const findItem = Store.user.cart.find((elInCart)=> elInCart.id === product!.id)
+			const findItem = Store.user.cart.productParams.find((elInCart)=> elInCart.id === product!.id)
 			if(findItem){
 				setIsInCart(true)
 			} else {
@@ -66,11 +66,11 @@ export const Popup_product_card:FC<Props> = observer(() => {
 
 	const addToCartHandler = () =>{
         if(isInCart){
-            Cart_Store.removeFromCart(product!.id)
+            Cart_Store.removeFromCart(product!.artikul)
             setIsInCart(false)
 			toast.success("Удалено из корзины")
         } else {
-            Cart_Store.addToCart(product!.id)
+            Cart_Store.addToCart(product!.artikul)
             setIsInCart(true)
 			toast.success("Добавлено в корзину")
         }
@@ -78,11 +78,11 @@ export const Popup_product_card:FC<Props> = observer(() => {
 
 	const addToFavHandler = () =>{
         if(isFav){
-            Store.removeFav(product!.id)
+            Store.removeFav(product!.artikul)
             setIsFav(false)
 			toast.success("Удалено из избранного")
         } else {
-            Store.addToFav(product!.id)
+            Store.addToFav(product!.artikul)
             setIsFav(true)
 			toast.success("Добавлено в избранное")
         }

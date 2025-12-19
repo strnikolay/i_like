@@ -18,7 +18,7 @@ export const ProductList_in_History:FC = observer(() => {
  
   useEffect(()=>{
       const tempArr:IProduct[] = []
-      Store.user.cart.forEach((elInCart:IcartItem)=>{
+      Store.user.cart.productParams.forEach((elInCart:IcartItem)=>{
         const el = mockdata.find((elInDB:IProduct)=> elInDB.id===elInCart.id)
         if(el){tempArr.push(el)}
       })

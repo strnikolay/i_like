@@ -23,7 +23,7 @@ const CartList:FC = observer(() => {
       if(Store.user.cart){
         Store.user.cart.productParams.forEach((elInCart:IcartItem)=>{
           //console.log("el", elInCart)
-          const el = mockdata.find((elInDB:IProduct)=> elInDB.id===elInCart.productId)
+          const el = mockdata.find((elInDB:IProduct)=> elInDB.artikul===elInCart.productId)
           
           if(el){
             const tempProduct:IProductInCart = {

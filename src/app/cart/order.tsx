@@ -36,7 +36,7 @@ const Order:FC = observer(() => {
       deliveryType: selectedReceipt, 
       adress: tempAdress,
       transport: "pochta", // selectedTranstort,
-      productParams:Store.user.cart
+      productParams:Store.user.cart.productParams
     }
     Cart_Store.setOrderParams(params)
     }

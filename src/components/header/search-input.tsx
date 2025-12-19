@@ -18,6 +18,7 @@ interface Props {
 }
 
 export const SearchInput: React.FC<Props> = () => {
+  console.log("отрисовка searchInput")
   const {Product_Store} = useStore();
   const [searchQuery, setSearchQuery] = React.useState('');
   const [focused, setFocused] = React.useState(false);
@@ -28,20 +29,20 @@ export const SearchInput: React.FC<Props> = () => {
     setFocused(false);
   });
 
-  const find = (el:IProduct) =>{
+  /*const find = (el:IProduct) =>{
     //console.log(el.id)
     if(el.id===searchQuery.toString()){return true;}
     brandList.forEach((brand)=>{
       if(brand===searchQuery) return true
     })
-  }
+  }*/
 
   useDebounce(
     async () => {
       const el = mockdata.filter((el)=>{
         //console.log(searchQuery)
         if(
-          el.id.includes(searchQuery.toString()) ||
+          el.artikul.includes(searchQuery.toString()) ||
           categoryList[el.cat].includes(searchQuery.toLowerCase())||
           brandList[el.brand].includes(searchQuery.toLowerCase())||
           searchQuery.length>2&&el.desc.toLowerCase().includes(searchQuery.toLowerCase())||
@@ -105,11 +106,11 @@ export const SearchInput: React.FC<Props> = () => {
                 className="link-wrap px-3 py-2 hover:bg-primary/10"
                 href={`/product/${product.id}`}
               >
-                <img className="dd-image rounded-sm h-8 w-8" src={product.img[0]} alt={product.id} />
+                <img className="dd-image rounded-sm h-8 w-8" src={product.img[0]} alt={product.artikul} />
                 <span>{product.id} {categoryList[product.cat]} {brandList[product.brand]}</span>
                 <span>Цена: {product.price}</span>
 
-                <AddToFavBTN id={product.id}/>
+                <AddToFavBTN id={product.artikul}/>
                 
                 
               </Link>

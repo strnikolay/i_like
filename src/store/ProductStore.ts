@@ -11,8 +11,8 @@ class productstore {
     makeAutoObservable(this);
   }
 
-  popupCardId:string = "" 
-  setPopupCardId(id:string){
+  popupCardId:number = 0 
+  setPopupCardId(id:number){
     this.popupCardId = id
   }
 
@@ -118,7 +118,7 @@ class productstore {
         param.forEach((par)=> {
           el.sizes.forEach((sizes)=>{
             if(sizes.size === par){
-              templist.push(el.id)
+              templist.push(el.artikul)
             }
           })
           
@@ -127,7 +127,7 @@ class productstore {
       const clearList = [...new Set(templist)]
       const clearDoubleArr:IProduct[] = []
       clearList.forEach((tempEl) =>{
-        const El = mockdata.find((el:IProduct)=>el.id===tempEl)
+        const El = mockdata.find((el:IProduct)=>el.artikul===tempEl)
         if(El)clearDoubleArr.push(El)      
       })
 
@@ -203,7 +203,7 @@ class productstore {
             size.colors.forEach((color)=>{
               param.forEach((par)=> {
                 if(color === par){
-                  templist.push(el.id)               
+                  templist.push(el.artikul)               
                 }
               })
             })
@@ -212,7 +212,7 @@ class productstore {
             size.colors.forEach((color)=>{
               param.forEach((par)=> {
                 if(color === par){
-                  templist.push(el.id)               
+                  templist.push(el.artikul)               
                 }
               })
             }) 
@@ -228,7 +228,7 @@ class productstore {
       //console.log(clearList)
       const clearDoubleArr:IProduct[] = []
       clearList.forEach((tempEl) =>{
-        const El = mockdata.find((el:IProduct)=>el.id===tempEl)
+        const El = mockdata.find((el:IProduct)=>el.artikul===tempEl)
         if(El)clearDoubleArr.push(El)      
       })
       this.SetProductFiltredByColors(clearDoubleArr)

@@ -18,5 +18,7 @@ export async function PATCH(req: NextRequest) {
       },
   });
     
+  //console.log(ItemParams)
+
   return NextResponse.json(ItemParams)
 } 

@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const Contact: React.FC = observer(() => {
-
+	console.log("отрисовка contact")
     	const [dropdown, setDropdown] = React.useState(false)
 
         return (

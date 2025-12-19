@@ -15,6 +15,7 @@ import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 }*/
 
 export async function POST(req: NextRequest) {
+  console.log("route login")
   const data = await req.json();
   //console.log("login route",data.email)
   const res = await prisma.user.findUnique({

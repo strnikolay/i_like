@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export const Cart_Btn: React.FC = observer(() => {
     const {Store, Cart_Store}  = useStore();
-
+        console.log("отрисовка cartBtn в header")
         return (
             <>
             {Store.isAuth?

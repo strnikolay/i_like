@@ -4,6 +4,7 @@ import "./globals.css";
 import { StoreProvider } from "@/store/storeProvidert";
 import { Popup } from "@/components/popup/Popup";
 import { Toast } from "@/components/toast/toast";
+import { WebVitals } from "@/components/webVitels";
 
 
 const cuprum = Cuprum({
@@ -22,9 +23,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  console.log("отрисовка rootlayout")
   return (
     <html lang="ru">
       <body className={`${cuprum.variable}`}>
+        <WebVitals/>
         <StoreProvider> 
         <Popup/>  
         <Toast/>

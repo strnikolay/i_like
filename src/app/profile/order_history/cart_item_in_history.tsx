@@ -18,11 +18,11 @@ export const Cart_item_in_history:FC<Props> = observer(({item, itemIndex}) => {
   const [itemSumm, setItemSumm] = useState<number>(0);
  
   useEffect(()=>{
-    const tempParams:IcartItem|undefined = Store.user.cart.find((elInCart:IcartItem)=>item.id===elInCart.id)
+    const tempParams:IcartItem|undefined = Store.user.cart.productParams.find((elInCart:IcartItem)=>item.id===elInCart.id)
 
     if(tempParams){
       //console.log("params", tempParams.params[0].count)
-      setItemParams(tempParams.params)
+      setItemParams(tempParams.itemParams)
     }
     Cart_Store.setIsParamsUpdate(false)
     //console.log("bpvtytybt", isCountUpdate)

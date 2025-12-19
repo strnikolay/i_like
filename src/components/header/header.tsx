@@ -9,7 +9,7 @@ import { Contact } from './header-component/contact';
 
 
 export const Header: React.FC = () => {
-
+	console.log("отрисовка хедера")
   	return (
   	<div className="header">
 		<div className="container">		

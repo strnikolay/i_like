@@ -82,7 +82,7 @@ class cartStore {
       if(product){
         const productCost = mockdata.find((el)=>el.id === product.id)?.price
         let productcount = 0
-        product.params.forEach((params:IcartItemParam)=>{
+        product.itemParams.forEach((params:IcartItemParam)=>{
           productcount = productcount + params.count
         })
         tempSumm = tempSumm + (productCost! * productcount)
@@ -98,11 +98,11 @@ class cartStore {
   orderParams:IOrderParams = {
     id:0,
     status:"",
-    contact:{name:"", phone:"", defaultContact:false},
+    contact:{name:"",phone:""},
     deliveryType: "delivery",
-    adress:{adress:"", defaultAdress:false},
+    adress:{adress:"",defaultAdress:true},
     transport:"",
-    productParams:Store.user.cart
+    productParams:[{id:0,orderId:0,productId:"",itemParams:[]}]
   }
   setOrderParams(params:IOrderParams){this.orderParams = params}
 

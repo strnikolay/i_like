@@ -12,7 +12,7 @@
         "**/eslint_config_mjs": true,
         "**/eslint.config.mts": true,
         "**/next-env.d.ts": true,
-        "**/next.config.ts": true,
+        //"**/next.config.ts": true,
         "**/favicon.ico": true,
         //"**/tsconfig.json": true,
         //"**/css.d.ts": true,

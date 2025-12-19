@@ -32,6 +32,20 @@ export async function POST(req: NextRequest) {
       itemParams:true,
     }
   })
+  
+  productParams.forEach((params, i)=> {
+    /*params.itemParams.sort((a,b)=> a.id - b.id)
+    console.log("item", params.itemParams)*/
+    productParams[i].itemParams = params.itemParams.sort((a,b)=> a.id - b.id)
+    /*const IdArray:number[] = []
+    params.itemParams.forEach((item)=>{
+      IdArray.push
+      IdArray.sort()
+      console.log("item", item.id)
+    })*/
+
+  })
+
   //console.log("productParams",productParams)
   //user.cart?.productParams = [productParams]
   //console.log("route get_user", user)
